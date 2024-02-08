@@ -63,3 +63,60 @@
 .heading-accent-violet {
   @apply text-accentViolet;
 }
+
+@keyframes colorChangeOne {
+  0%,
+  33% {
+    color: #00c2d9;
+  }
+  34%,
+  66% {
+    color: #823dd1;
+  }
+  67%,
+  100% {
+    color: #f14545;
+  }
+}
+
+@keyframes colorChangeTwo {
+  0%,
+  33% {
+    color: #823dd1;
+  }
+  34%,
+  66% {
+    color: #f14545;
+  }
+  67%,
+  100% {
+    color: #00c2d9;
+  }
+}
+
+@keyframes colorChangeThree {
+  0%,
+  33% {
+    color: #f14545;
+  }
+  34%,
+  66% {
+    color: #00c2d9;
+  }
+  67%,
+  100% {
+    color: #823dd1;
+  }
+}
+
+.heading-animated-one {
+  animation: colorChangeOne 3s infinite linear;
+}
+
+.heading-animated-two {
+  animation: colorChangeTwo 3s infinite linear;
+}
+
+.heading-animated-three {
+  animation: colorChangeThree 3s infinite linear;
+}

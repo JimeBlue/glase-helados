@@ -33,11 +33,13 @@
           class="w-fit mx-auto flex flex-col -space-y-8 sm:-space-y-12 lg:-space-y-16"
         >
           <li>
-            <h1 class="heading-one heading-accent-red font-extrabold">Glasé</h1>
+            <h1 class="heading-one font-extrabold heading-animated-one">
+              Glasé
+            </h1>
           </li>
           <li>
             <h1
-              class="heading-one heading-accent-turqoise font-extrabold relative"
+              class="heading-one font-extrabold heading-animated-two relative"
             >
               <span>G</span><span class="opacity-0">l</span>
               <span>asé</span>
@@ -50,7 +52,7 @@
           </li>
           <li>
             <h1
-              class="heading-one heading-accent-violet font-extrabold tracking-[11px] sm:tracking-[16px] lg:tracking-[20px]"
+              class="heading-one font-extrabold heading-animated-three tracking-[11px] sm:tracking-[16px] lg:tracking-[20px]"
             >
               baby
             </h1>
