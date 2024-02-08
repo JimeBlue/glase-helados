@@ -9,7 +9,18 @@ export default {
     './error.vue',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['poppins', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        headline: [
+          'poppins',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          'sans-serif',
+        ],
+      },
+    },
   },
   plugins: [],
 }
