@@ -43,7 +43,23 @@
   src:
     url('/fonts/Poppins-ExtraBold.woff2') format('woff2'),
     url('/fonts/Poppins-ExtraBold.woff') format('woff');
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
+}
+
+.heading-one {
+  @apply text-[85px] sm:text-[130px] md:text-[120px] lg:text-[160px] uppercase;
+}
+
+.heading-accent-red {
+  @apply text-accentRed;
+}
+
+.heading-accent-turqoise {
+  @apply text-accentTurqoise;
+}
+
+.heading-accent-violet {
+  @apply text-accentViolet;
 }
