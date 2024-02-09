@@ -11,7 +11,7 @@
         <span>do</span>
         <img
           src="/images/ice-cream-hero.png"
-          alt=""
+          alt="strawberry ice cream"
           class="absolute top-[27px] left-[118px] sm:top-[40px] sm:left-[180px] md:top-[48px] md:left-[194px] lg:left-[226px] lg:top-[58px] xl:left-[280px] xl:top-[70px] w-8 h-15 sm:w-12 sm:h-[100px] md:h-[106px] lg:h-[115px] lg:w-12 xl:h-[145px] xl:w-16"
         />
       </h1>

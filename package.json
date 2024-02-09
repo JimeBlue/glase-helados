@@ -21,5 +21,9 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "prettier": "^3.2.5",
     "@nuxtjs/tailwindcss": "^6.10.3"
+  },
+  "author": {
+    "name": "Jimena Miguez",
+    "email": "jimeblau@gmail.com"
   }
 }
