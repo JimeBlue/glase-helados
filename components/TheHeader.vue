@@ -1,33 +1,48 @@
 <template>
   <header class="bg-primary">
-    <div class="w-4/5 mx-auto flex justify-between items-center">
+    <div class="w-11/12 mx-auto flex justify-between items-center">
       <!-- logo -->
-      <figure class="relative">
+      <figure class="relative pt-2">
         <figcaption class="logo">grido</figcaption>
         <img
           src="/images/scoop.png"
           alt="ice cream scoop"
-          class="w-3 h-3 absolute top-0 left-6"
+          class="w-3 h-3 absolute top-2 left-6"
         />
       </figure>
       <!-- mobile menu -->
-      <nav class="md:hidden">
-        <button aria-label="open" @click="toggleNav()">open</button>
+      <nav class="md:hidden relative">
+        <button
+          aria-label="open"
+          @click="toggleNav()"
+          class="focus:outline-none w-10 h-10"
+        >
+          <IconsHamburger class="w-10 h-10 pt-4 text-pink-400" />
+        </button>
         <transition name="slide">
           <div
             v-if="navOpen"
-            class="w-[80%] h-screen fixed top-0 right-0 bg-opacity-10 bg-white backdrop-blur-lg z-50"
+            class="w-full h-screen fixed top-0 right-0 bg-pink-100 z-50"
           >
             <div>
-              <button aria-label="close" @click="toggleNav()">close</button>
-              <ul>
+              <button
+                aria-label="close"
+                class="focus:outline-none z-20 w-10 h-10 absolute top-4 right-5"
+                @click="toggleNav()"
+              >
+                <IconsClose class="w-10 h-10 text-amber-700" />
+              </button>
+              <ul class="mt-16 px-6">
                 <li>
                   <NuxtLink
                     v-for="entry in navigationEntries"
                     :key="entry.label"
                     :to="entry.to"
+                    class="block text-amber-700 capitalize my-4 text-base sm:text-lg hover:text-pink-400 transition-all"
+                    :class="{ active: isActive(entry.to) }"
+                    @click="toggleNav()"
                   >
-                    <span class="text-black">{{ entry.label }}</span>
+                    {{ entry.label }}
                   </NuxtLink>
                 </li>
               </ul>
@@ -43,6 +58,8 @@
               v-for="entry in navigationEntries"
               :key="entry.label"
               :to="entry.to"
+              class="hover:text-pink-400 transition-all"
+              :class="{ active: isActive(entry.to) }"
             >
               <span>{{ entry.label }}</span>
             </NuxtLink>
@@ -64,6 +81,11 @@ const navigationEntries = [
   { to: '#empresa', label: 'empresa' },
   { to: '#novdedades', label: 'novedades' },
 ]
+
+// Checks active link
+const isActive = (to) => {
+  return window.location.hash === to
+}
 </script>
 <style scoped>
 /* Slide in of mobile menu from right to left */

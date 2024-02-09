@@ -16,6 +16,8 @@ export default {
         accentRed: '#f14545',
         accentTurqoise: '#00c2d9',
         accentViolet: '#823dd1',
+        pink: { 100: '#fbe7ea', 400: '#e88491' },
+        amber: { 700: '#975d33' },
       },
       fontFamily: {
         sans: ['poppins', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
