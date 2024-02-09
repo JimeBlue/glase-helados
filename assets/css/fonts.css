@@ -48,6 +48,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'ProtestStrike';
+  src:
+    url('/fonts/ProtestStrike-Regular.woff2') format('woff2'),
+    url('/fonts/ProtestStrike-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .heading-one {
   @apply text-[85px] sm:text-[130px] md:text-[140px] lg:text-[160px] xl:text-[200px] uppercase;
 }
@@ -119,4 +129,8 @@
 
 .heading-animated-three {
   animation: colorChangeThree 3s infinite linear;
+}
+
+.logo {
+  @apply font-logo uppercase mt-2 text-xl tracking-widest;
 }

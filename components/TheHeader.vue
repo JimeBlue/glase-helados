@@ -2,7 +2,14 @@
   <header class="bg-primary">
     <div class="w-4/5 mx-auto flex justify-between items-center">
       <!-- logo -->
-      <p>logo</p>
+      <figure class="relative">
+        <figcaption class="logo">grido</figcaption>
+        <img
+          src="/images/scoop.png"
+          alt="ice cream scoop"
+          class="w-3 h-3 absolute top-0 left-6"
+        />
+      </figure>
       <!-- mobile menu -->
       <nav class="md:hidden">
         <button aria-label="open" @click="toggleNav()">open</button>

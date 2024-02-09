@@ -25,6 +25,14 @@ export default {
           'Arial',
           'sans-serif',
         ],
+
+        logo: [
+          'ProtestStrike',
+          'poppins',
+          'Roboto',
+          '"Helvetica Neue"',
+          'sans-serif',
+        ],
       },
     },
   },
