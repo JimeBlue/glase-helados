@@ -38,7 +38,7 @@
                     v-for="entry in navigationEntries"
                     :key="entry.label"
                     :to="entry.to"
-                    class="block text-amber-700 capitalize my-4 text-base sm:text-lg hover:text-pink-400 transition-all"
+                    class="block text-amber-700 my-4 text-base sm:text-lg hover:text-pink-400 transition-all"
                     :class="{ active: isActive(entry.to) }"
                     @click="toggleNav()"
                   >
@@ -53,12 +53,12 @@
       <!-- desktop menu -->
       <nav class="hidden md:block">
         <ul>
-          <li>
+          <li class="space-x-3">
             <NuxtLink
               v-for="entry in navigationEntries"
               :key="entry.label"
               :to="entry.to"
-              class="hover:text-pink-400 transition-all"
+              class="text-amber-700 hover:text-pink-400 transition-all"
               :class="{ active: isActive(entry.to) }"
             >
               <span>{{ entry.label }}</span>
@@ -78,8 +78,8 @@ const toggleNav = () => {
 
 // Nav links
 const navigationEntries = [
-  { to: '#empresa', label: 'empresa' },
-  { to: '#novdedades', label: 'novedades' },
+  { to: '#empresa', label: 'Empresa' },
+  { to: '#novdedades', label: 'Novedades' },
 ]
 
 // Checks active link
