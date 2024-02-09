@@ -49,7 +49,7 @@
 }
 
 .heading-one {
-  @apply text-[85px] sm:text-[130px] md:text-[120px] lg:text-[160px] uppercase;
+  @apply text-[85px] sm:text-[130px] md:text-[140px] lg:text-[160px] xl:text-[200px] uppercase;
 }
 
 .heading-accent-red {
