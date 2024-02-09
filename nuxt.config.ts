@@ -11,18 +11,11 @@ export default defineNuxtConfig({
         {
           hid: 'description',
           name: 'description',
-          content:
-            '',
+          content: '',
         },
       ],
     },
   },
   devtools: { enabled: true },
-  css: ['~/assets/css/tailwind.css'],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
+  modules: ['@nuxtjs/tailwindcss'],
 })
