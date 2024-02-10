@@ -136,5 +136,5 @@
 }
 
 .lead {
-  @apply w-10/12 sm:w-1/2 mx-auto -mt-16 xl:-mt-24 text-center text-4xl md:text-5xl xl:text-6xl uppercase font-medium text-gray-800 leading-8;
+  @apply w-10/12 sm:w-1/2 lg:w-10/12 mx-auto -mt-16 xl:-mt-24 text-center text-4xl md:text-5xl xl:text-6xl uppercase font-medium text-gray-800 leading-8;
 }
