@@ -1,15 +1,15 @@
 <template>
   <div>
-    <section id="hero" class="bg-primary overflow-x-hidden">
+    <section id="hero" class="bg-primary overflow-hidden">
       <div class="container">
         <BaseHeading />
-        <div class="relative -top-6 left-[55%]">
+        <div class="relative -top-6 xl:-top-16 left-[55%]">
           <!-- TODO: make the ice truck a component and place it in the page -->
           <div class="w-fit">
             <div
-              class="border-2 border-amber-700 w-24 h-24 rounded-full flex items-center justify-center"
+              class="border-2 border-amber-700 w-24 h-24 xl:w-32 xl:h-32 rounded-full flex items-center justify-center"
             >
-              <IconsTruck class="text-amber-700 h-16 w-16" />
+              <IconsTruck class="text-amber-700 h-16 w-16 xl:w-20 xl:h-20" />
             </div>
             <img
               src="/images/pink-down-arrow.png"
