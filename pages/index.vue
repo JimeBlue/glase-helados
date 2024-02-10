@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section id="hero" class="bg-primary">
+    <section id="hero" class="bg-primary overflow-x-hidden">
       <div class="container">
         <BaseHeading />
-        <div>
-          <!-- TODO: move to a component and place it in the page -->
+        <div class="relative -top-6 left-[55%]">
+          <!-- TODO: make the ice truck a component and place it in the page -->
           <div class="w-fit">
             <div
               class="border-2 border-amber-700 w-24 h-24 rounded-full flex items-center justify-center"
@@ -18,6 +18,12 @@
             />
           </div>
         </div>
+        <p class="lead">
+          la cremosa, refrescante, deliciosa experiencia grido ha llegado<span
+            class="text-pink-400"
+            >.</span
+          >
+        </p>
       </div>
     </section>
     <section id="empresa">
@@ -28,3 +34,4 @@
     </section>
   </div>
 </template>
+<script setup></script>
