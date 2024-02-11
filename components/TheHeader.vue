@@ -78,7 +78,8 @@ const toggleNav = () => {
 
 // Nav links
 const navigationEntries = [
-  { to: '#empresa', label: 'Empresa' },
+  { to: '#distribuidores', label: 'Distribuidores' },
+  { to: '#sabores', label: 'sabores' },
   { to: '#novdedades', label: 'Novedades' },
 ]
 

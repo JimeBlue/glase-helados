@@ -25,7 +25,7 @@
               exigentes.
               <img
                 src="/images/pink-right-arrow.png"
-                alt="pink arrow pointing right"
+                alt="flecha rosa con direccion hacia arriba"
                 class="block w-fit ml-auto"
               />
             </p>
@@ -44,21 +44,21 @@
             <li class="distributors__ice-cream-item bg-accentTurqoise">
               <img
                 src="/images/cono-choco.png"
-                alt=""
+                alt="cucurucho de helado de chocolate"
                 class="w-full h-full object-contain"
               />
             </li>
             <li class="distributors__ice-cream-item bg-accentRed">
               <img
                 src="/images/cono-limon.png"
-                alt=""
+                alt="cucurucho de helado de limon"
                 class="w-full h-full object-contain"
               />
             </li>
             <li class="distributors__ice-cream-item bg-accentTurqoise">
               <img
                 src="/images/cono-frutilla.png"
-                alt=""
+                alt="cucurucho de helado de frutilla"
                 class="w-full h-full object-contain"
               />
             </li>
@@ -68,7 +68,7 @@
             target="_blank"
           >
             <button
-              class="block lg:hidden btn btn-pink btn-shadow mt-6 mx-auto"
+              class="block lg:hidden btn btn-pink btn-shadow mt-6 w-full sm:w-fit mx-auto"
             >
               distribuidores
             </button>
@@ -76,11 +76,36 @@
         </article>
       </div>
     </section>
-    <section id="empresa">
-      <h2>EMPRESA</h2>
-    </section>
-    <section id="novdedades">
-      <h2>NOVEDADES</h2>
+    <section id="sabores">
+      <div class="container">
+        <article class="space-y-10 lg:space-y-0">
+          <div>
+            <p class="text-amber-700 font-medium text-2xl text-center">
+              Contamos con muchos sabores, incluidos los más pedidos
+              <span class="text-accentRed">frutilla</span>,
+              <span class="text-accentViolet">glacé</span> y
+              <span class="text-accentTurqoise">crema del cielo</span>.
+            </p>
+            <button
+              class="md:hidden btn btn-pink btn-shadow w-full sm:w-fit mx-auto mt-12"
+            >
+              sabores
+            </button>
+          </div>
+          <div class="md:grid md:grid-cols-2">
+            <div class="hidden md:block">
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                fugiat?
+              </div>
+              <button class="btn btn-primary btn-shadow">sabores</button>
+            </div>
+            <div>
+              <img src="/images/sabores.jpg" alt="sabores de helados" />
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
   </div>
 </template>
