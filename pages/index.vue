@@ -30,9 +30,14 @@
               />
             </p>
             <div class="pt-8">
-              <button class="btn btn-primary btn-shadow w-full">
-                distribuidores
-              </button>
+              <a
+                href="https://www.google.com/maps/search/Argentina+helados+grido/@-32.5822305,-84.9546358,4z/data=!3m1!4b1?entry=ttu"
+                target="_blank"
+              >
+                <button class="btn btn-primary btn-shadow w-full">
+                  distribuidores
+                </button>
+              </a>
             </div>
           </div>
           <ul class="grid grid-cols-3 gap-x-2">
@@ -58,9 +63,16 @@
               />
             </li>
           </ul>
-          <button class="block lg:hidden btn btn-pink btn-shadow mt-6 mx-auto">
-            distribuidores
-          </button>
+          <a
+            href="https://www.google.com/maps/search/Argentina+helados+grido/@-32.5822305,-84.9546358,4z/data=!3m1!4b1?entry=ttu"
+            target="_blank"
+          >
+            <button
+              class="block lg:hidden btn btn-pink btn-shadow mt-6 mx-auto"
+            >
+              distribuidores
+            </button>
+          </a>
         </article>
       </div>
     </section>
