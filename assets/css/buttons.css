@@ -1,0 +1,15 @@
+.btn {
+  @apply flex items-center justify-center text-base uppercase rounded py-3 px-5 transition-all ease-in-out delay-700;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-gradient-to-r from-accentRed to-accentTurqoise;
+}
+
+.btn-pink {
+  @apply bg-pink-400 text-white hover:bg-gradient-to-r from-accentRed to-accentTurqoise;
+}
+
+.btn-shadow {
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.25);
+}

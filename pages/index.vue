@@ -30,7 +30,7 @@
               />
             </p>
             <div class="pt-8">
-              <button class="bg-pink-400 px-6 py-3 text-white uppercase w-full">
+              <button class="btn btn-primary btn-shadow w-full">
                 distribuidores
               </button>
             </div>
@@ -58,9 +58,7 @@
               />
             </li>
           </ul>
-          <button
-            class="block lg:hidden bg-pink-400 px-6 py-3 text-white uppercase mt-6 mx-auto"
-          >
+          <button class="block lg:hidden btn btn-pink btn-shadow mt-6 mx-auto">
             distribuidores
           </button>
         </article>
