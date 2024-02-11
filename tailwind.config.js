@@ -52,7 +52,7 @@ export default {
           paddingLeft: theme('spacing.5'),
           paddingRight: theme('spacing.5'),
           '@screen lg': {
-            maxWidth: '1800px',
+            maxWidth: '1200px',
             paddingLeft: theme('spacing.24'),
             paddingRight: theme('spacing.24'),
           },

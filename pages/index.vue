@@ -14,38 +14,47 @@
         </p>
       </div>
     </section>
-    <section id="distribuidores" class="bg-primary py-16">
+    <section id="distribuidores" class="distributors__gradient py-16">
       <div class="container">
-        <article class="lg:flex lg:items-center lg:space-x-2">
-          <div class="hidden lg:block lg:w-[30%]">
-            <p class="text-lg font-medium">
-              8 oz. of low-dose effervescent goodness. Perfect for socializing
-              day and night.
+        <article class="distributors__grid-container">
+          <div class="hidden lg:grid lg:grid-rows-2">
+            <p
+              class="text-xl xl:text-2xl leading-8 text-left font-medium text-amber-700 py-16"
+            >
+              Hechos con materia prima seleccionada para los paladares más
+              exigentes.
+              <img
+                src="/images/pink-right-arrow.png"
+                alt="pink arrow pointing right"
+                class="block w-fit ml-auto"
+              />
             </p>
-            <button class="bg-pink-400 px-6 py-3 text-white uppercase mt-1">
-              distribuidores
-            </button>
+            <div class="pt-8">
+              <button class="bg-pink-400 px-6 py-3 text-white uppercase w-full">
+                distribuidores
+              </button>
+            </div>
           </div>
-          <ul class="grid grid-cols-3 gap-x-2 lg:w-[70%]">
-            <li class="h-32 min-[432px]:h-40 sm:h-52 md:h-60 lg:h-96 w-full">
+          <ul class="grid grid-cols-3 gap-x-2">
+            <li class="distributors__ice-cream-item bg-accentTurqoise">
               <img
-                src="/images/ice-cream-one.jpg"
+                src="/images/cono-choco.png"
                 alt=""
-                class="w-full h-full object-cover"
+                class="w-full h-full object-contain"
               />
             </li>
-            <li class="h-32 min-[432px]:h-40 sm:h-52 md:h-60 lg:h-96 w-full">
+            <li class="distributors__ice-cream-item bg-accentRed">
               <img
-                src="/images/ice-cream-three.jpg"
+                src="/images/cono-limon.png"
                 alt=""
-                class="w-full h-full object-cover object-center"
+                class="w-full h-full object-contain"
               />
             </li>
-            <li class="h-32 min-[432px]:h-40 sm:h-52 md:h-60 lg:h-96 w-full">
+            <li class="distributors__ice-cream-item bg-accentTurqoise">
               <img
-                src="/images/ice-cream-two.jpg"
+                src="/images/cono-frutilla.png"
                 alt=""
-                class="w-full h-full object-cover"
+                class="w-full h-full object-contain"
               />
             </li>
           </ul>
@@ -66,3 +75,4 @@
   </div>
 </template>
 <script setup></script>
+<style scoped></style>

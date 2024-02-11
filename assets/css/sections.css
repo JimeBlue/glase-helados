@@ -1,0 +1,29 @@
+/* NOTE: section distributors */
+
+.distributors__gradient {
+  background: linear-gradient(to bottom, #ffb35c 50%, white 50%);
+}
+
+@media (min-width: 1280px) {
+  .distributors__gradient {
+    background: linear-gradient(to bottom, #ffb35c 50%, white 50%);
+  }
+}
+
+.distributors__ice-cream-item {
+  @apply h-32 min-[432px]:h-40 sm:h-52 md:h-60 lg:h-96 w-full p-2;
+}
+.distributors__grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 10px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .distributors__grid-container {
+    grid-template-columns: 30% 70%;
+    grid-template-rows: none;
+    column-gap: 16px;
+  }
+}
