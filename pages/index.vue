@@ -88,9 +88,16 @@
             </p>
             <button
               class="md:hidden btn btn-pink btn-shadow w-full sm:w-fit mx-auto mt-12"
+              @click="showModal = true"
             >
               sabores
             </button>
+            <BaseModal
+              :isVisible="showModal"
+              @update:isVisible="showModal = $event"
+              :categories="flavors"
+            >
+            </BaseModal>
           </div>
           <div class="md:grid md:grid-cols-2">
             <div class="hidden md:block">
@@ -98,7 +105,12 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
                 fugiat?
               </div>
-              <button class="btn btn-primary btn-shadow">sabores</button>
+              <button
+                class="btn btn-primary btn-shadow"
+                @click="showModal = true"
+              >
+                sabores
+              </button>
             </div>
             <div>
               <img src="/images/sabores.jpg" alt="sabores de helados" />
@@ -109,5 +121,8 @@
     </section>
   </div>
 </template>
-<script setup></script>
+<script setup>
+const showModal = ref(false)
+const { iceCreamFlavors: flavors } = useIceCreamFlavors()
+</script>
 <style scoped></style>
