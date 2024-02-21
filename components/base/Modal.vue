@@ -5,7 +5,17 @@
       class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
       @click.self="closeModal"
     >
-      <div class="bg-white p-5 rounded-lg max-h-[80vh] overflow-auto">
+      <!-- TODO: 
+        - make tags more accessible. 
+        - add accessibility to button. 
+        - create classes to put in the corresponding css file if necessary 
+        - add icon for the close modal and style it accordingly
+        - style content inside modal   
+    -->
+      <!-- NOTE: wrapper holding modal's content -->
+      <div class="bg-white p-5 rounded-lg max-h-[80vh] w-[80%] overflow-auto">
+        <!-- close button -->
+        <button class="modal-close-btn" @click="closeModal">Close</button>
         <!-- Loop over categories and flavors -->
         <div
           v-for="category in categories"
@@ -23,8 +33,6 @@
             </li>
           </ul>
         </div>
-
-        <button class="modal-close-btn" @click="closeModal">Close</button>
       </div>
     </div>
   </transition>
