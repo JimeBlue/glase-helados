@@ -9,13 +9,15 @@
         - make tags more accessible. 
         - add accessibility to button. 
         - create classes to put in the corresponding css file if necessary 
-        - add icon for the close modal and style it accordingly
+        - add icon for the close modal and style it accordingly making it accessible
         - style content inside modal   
     -->
       <!-- NOTE: wrapper holding modal's content -->
       <div class="bg-white p-5 rounded-lg max-h-[80vh] w-[80%] overflow-auto">
         <!-- close button -->
-        <button class="modal-close-btn" @click="closeModal">Close</button>
+        <button class="block ml-auto" @click="closeModal">
+          <IconsClose class="w-10 h-10 text-amber-700" />
+        </button>
         <!-- Loop over categories and flavors -->
         <div
           v-for="category in categories"
