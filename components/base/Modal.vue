@@ -12,28 +12,35 @@
         - add icon for the close modal and style it accordingly making it accessible
         - style content inside modal   
     -->
-      <!-- NOTE: wrapper holding modal's content -->
-      <div class="bg-white p-5 rounded-lg max-h-[80vh] w-[80%] overflow-auto">
-        <!-- close button -->
-        <button class="block ml-auto" @click="closeModal">
-          <IconsClose class="w-10 h-10 text-amber-700" />
-        </button>
-        <!-- Loop over categories and flavors -->
-        <div
-          v-for="category in categories"
-          :key="category.category"
-          class="mb-4"
-        >
-          <h3 class="font-bold text-lg">{{ category.category }}</h3>
-          <ul>
-            <li
-              v-for="flavor in category.flavors"
-              :key="flavor"
-              class="text-gray-700"
-            >
-              {{ flavor }}
-            </li>
-          </ul>
+      <!-- NOTE: wrapper holding modal's header and content -->
+      <div
+        class="bg-white rounded-lg max-h-[80vh] w-[80%] flex flex-col overflow-auto"
+      >
+        <!-- header -->
+        <header class="flex justify-end p-5 sticky top-0 z-10 shadow-md">
+          <button class="block mr-4" @click="closeModal">
+            <IconsClose class="w-6 h-6 text-amber-700" />
+          </button>
+        </header>
+
+        <!-- content -->
+        <div class="p-5 overflow-auto">
+          <div
+            v-for="category in categories"
+            :key="category.category"
+            class="mb-4"
+          >
+            <h3 class="font-bold text-lg">{{ category.category }}</h3>
+            <ul>
+              <li
+                v-for="flavor in category.flavors"
+                :key="flavor"
+                class="text-gray-700"
+              >
+                {{ flavor }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
