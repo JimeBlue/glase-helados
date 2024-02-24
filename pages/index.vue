@@ -97,6 +97,9 @@
               @update:isVisible="showModal = $event"
               :categories="flavors"
             >
+              <template v-slot:title>
+                <h3 class="text-center">Nuestros Sabores</h3>
+              </template>
             </BaseModal>
           </div>
           <div class="md:grid md:grid-cols-2">
