@@ -2,7 +2,7 @@
   <transition name="modal">
     <div
       v-if="isVisible"
-      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-end md:items-center"
       @click.self="closeModal"
     >
       <!-- TODO: 
@@ -14,7 +14,7 @@
     -->
       <!-- NOTE: wrapper holding modal's header and content -->
       <div
-        class="bg-white rounded-lg max-h-[80vh] w-[80%] flex flex-col overflow-auto"
+        class="bg-white rounded-t-lg md:rounded-lg max-h-[80vh] w-[80%] flex flex-col overflow-auto"
       >
         <!-- header -->
         <header class="flex justify-end p-5 sticky top-0 z-10 shadow-md">
