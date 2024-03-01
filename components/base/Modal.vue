@@ -33,9 +33,11 @@
             <div
               v-for="category in categories"
               :key="category.category"
-              class="mb-4"
+              class="mb-4 md:ml-16"
             >
-              <h3 class="font-bold text-lg">{{ category.category }}</h3>
+              <h3 class="font-bold text-lg text-accentViolet">
+                {{ category.category }}
+              </h3>
               <ul>
                 <li
                   v-for="flavor in category.flavors"

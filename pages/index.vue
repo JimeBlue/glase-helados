@@ -98,7 +98,11 @@
               :categories="flavors"
             >
               <template v-slot:title>
-                <h3 class="text-center">Nuestros Sabores</h3>
+                <h3
+                  class="text-center text-4xl text-pink-400 font-bold mb-6 md:mb-12"
+                >
+                  Nuestros Sabores
+                </h3>
               </template>
             </BaseModal>
           </div>
