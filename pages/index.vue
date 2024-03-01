@@ -95,7 +95,6 @@
             <BaseModal
               :isVisible="showModal"
               @update:isVisible="showModal = $event"
-              :categories="flavors"
             >
               <template v-slot:title>
                 <h3
@@ -103,6 +102,30 @@
                 >
                   Nuestros Sabores
                 </h3>
+              </template>
+              <template v-slot:content>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 md:gapy-0 md:gap-4 lg:gap-6"
+                >
+                  <div
+                    v-for="category in flavors"
+                    :key="category.category"
+                    class="mb-4 md:ml-16"
+                  >
+                    <h3 class="font-bold text-lg text-accentViolet">
+                      {{ category.category }}
+                    </h3>
+                    <ul>
+                      <li
+                        v-for="flavor in category.flavors"
+                        :key="flavor"
+                        class="text-gray-700"
+                      >
+                        {{ flavor }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </template>
             </BaseModal>
           </div>

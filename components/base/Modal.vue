@@ -5,14 +5,6 @@
       class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-end md:items-center"
       @click.self="closeModal"
     >
-      <!-- TODO: 
-        - make tags more accessible. 
-        - add accessibility to button. 
-        - create classes to put in the corresponding css file if necessary 
-        - add icon for the close modal and style it accordingly making it accessible
-        - style content inside modal  
-        - move the modal content to a slot 
-    -->
       <!-- NOTE: wrapper holding modal's header and content -->
       <div
         class="bg-white rounded-t-lg md:rounded-lg max-h-[80vh] w-[80%] flex flex-col overflow-auto"
@@ -25,31 +17,10 @@
         </header>
 
         <!-- content -->
-        <div class="p-5 overflow-auto">
+        <section class="p-5 overflow-auto">
           <slot name="title"></slot>
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 md:gapy-0 md:gap-4 lg:gap-6"
-          >
-            <div
-              v-for="category in categories"
-              :key="category.category"
-              class="mb-4 md:ml-16"
-            >
-              <h3 class="font-bold text-lg text-accentViolet">
-                {{ category.category }}
-              </h3>
-              <ul>
-                <li
-                  v-for="flavor in category.flavors"
-                  :key="flavor"
-                  class="text-gray-700"
-                >
-                  {{ flavor }}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          <slot name="content"></slot>
+        </section>
       </div>
     </div>
   </transition>
@@ -58,7 +29,6 @@
 <script setup>
 const props = defineProps({
   isVisible: Boolean,
-  categories: Array,
 })
 const emit = defineEmits(['update:isVisible'])
 
